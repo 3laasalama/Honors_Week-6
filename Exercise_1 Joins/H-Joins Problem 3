@@ -1,0 +1,6 @@
+--Problem 3
+
+select crim.case_number, cen.community_area_name
+from crimedata1 crim full outer join censusdata cen
+on cen.community_area_number = crim.community_area_number
+where cen.community_area_name in ('Oakland', 'Armour Square', 'Edgewater', 'CHICAGO');

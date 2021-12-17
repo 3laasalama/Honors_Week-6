@@ -1,0 +1,5 @@
+--Problem 1
+
+select crim.case_number, crim.primary_type , cen.community_area_name
+from crimedata1 crim inner join censusdata cen 
+on cen.community_area_number = crim.community_area_number;
